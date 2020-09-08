@@ -1,0 +1,26 @@
+<div class="container">
+  <div class="row">
+    <div class="col-md-6">
+      <div #pieChart style="width: 40vw; height: 40vh;"></div>
+      <form>
+        <div class="form-group">
+          <label for=""><strong>Total Dividas: </strong>{{valorTotalDividas | currency:'BRL':true}}</label>
+        </div>
+        <div class="form-group">
+          <label for=""><strong>Total Pago: </strong></label> <label style="color:green">
+            {{valorTotalPago  | currency:'BRL':true}}</label>
+        </div>
+        <div class="form-group">
+          <label for=""><Strong>Total Inadimplente:</Strong></label> <label style="color:red">
+            {{valorTotalInadimplente   | currency:'BRL':true}}</label>
+        </div>
+        <div class="form-group">
+          <label for=""><strong>Novas Inadimplencias hoje: </strong>{{inadimplenciasHoje}}</label>
+        </div>
+      </form>
+    </div>
+    <div class="col-md-6">
+    </div>
+  </div>
+
+</div>
